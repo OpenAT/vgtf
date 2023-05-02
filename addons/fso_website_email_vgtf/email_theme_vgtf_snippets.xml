@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    
+    <!-- THEME 'vgtf' SNIPPETS -->
+    <!-- HINT: We simply use the default snippets from 'fso_website_email.theme_framework_snippets' -->
+    <!-- HINT: These snippets will be loaded in the template 'email_theme_vgtf_assets_editmode' by java script -->
+    <template id="email_theme_vgtf_snippets">
+        <!-- Simply Load theme_default_snippets :) -->
+        <t t-call="fso_website_email.theme_framework_snippets"/>
+    </template>
+
+    <!-- EXTEND fso_website_email.theme_framework_snippets for the 'vgtf' theme -->
+    <template id="email_theme_vgtf_snippets_overrides" inherit_id="fso_website_email.theme_framework_snippets" name="Email Theme vgtf Snippet overrides">
+
+        <!-- =========================== -->
+        <!-- SNIPPET TARGETS AND OPTIONS -->
+        <!-- =========================== -->
+
+        <!-- .vgtf_bin Targets -->
+        <xpath expr="//div[@id='snippet_options']" position="inside">
+            <div data-snippet-option-id='vgtf_bin_target'
+                 data-selector=".vgtf_bin"
+                 data-selector-siblings="[data-oe-field='body_html'] > div"
+                 data-selector-children="[data-oe-field='body_html']">
+            </div>
+            <div data-snippet-option-id='vgtf_bin_inside'
+                 data-selector=".snippet_block"
+                 data-selector-siblings=".vgtf_bin > div"
+                 data-selector-children=".vgtf_bin">
+            </div>
+        </xpath>
+
+    </template>
+
+</data>
+</openerp>

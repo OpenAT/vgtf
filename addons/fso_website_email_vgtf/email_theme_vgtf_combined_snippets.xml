@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+        <!-- INHERIT AND EXTEND theme_default_snippets -->
+    <template id="email_theme_vgtf_snippets_overrides_prat2" inherit_id="fso_website_email.theme_framework_snippets">
+        <!-- Add snippet category  -->
+        <xpath expr="//li[@id='snippet_menu_special']" position="after">
+            <li id="snippet_menu_combined_snippets_vgtf">
+                <a href="#combined_snippets_vgtf" data-toggle="tab">Combined</a>
+            </li>
+        </xpath>
+
+        <!-- Actual snippets -->
+        <xpath expr="//div[@id='snippet_email_special']" position="after">
+            <div id="combined_snippets_vgtf" class="tab-pane fade">
+
+                <!-- Header snippet -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_vgtf/static/src/img/snippet_header.png"/>
+                        <span class="oe_snippet_thumbnail_title">Header Snippet</span>
+                    </div>
+                    <div id="combined_header_snippet" class="oe_snippet_body ckediting_disabled vgtf_bin">
+                        <t t-call="fso_website_email.snippet_block">
+                            <a href="%open_browser%" data-cke-saved-href="%open_browser%" target="_blank">Webversion</a>
+                        </t>
+                        <t t-call="fso_website_email.snippet_block">
+                            <a href="https://vgt.at/">
+                                <img src="/fso_website_email_vgtf/static/src/img/tierparade2.jpeg"
+                                     class="flexibleImage snippet_block_banner_image"/>
+                            </a>
+                        </t>
+                    </div>
+                </div>
+
+                <!-- Footer snippet -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_vgtf/static/src/img/snippet_header.png"/>
+                        <span class="oe_snippet_thumbnail_title">Footer Snippet</span>
+                    </div>
+                    <div id="combined_footer_snippet" class="oe_snippet_body ckediting_disabled vgtf_bin">
+                        <t t-call="fso_website_email.snippet_block">
+                            <t t-set="nockedit" t-value="True"/>
+
+                            <!-- CONTENT TABLE LEFT -->
+                            <table class="flexibleContainerLeft" align="left" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top" class="textContent ckediting_enabled" contenteditable="true">
+                                            <p>
+                                                VGT - VEREIN GEGEN TIERFABRIKEN<br/>
+                                                Meidlinger Hauptstraße 63/6, A-1120 Wien<br/>
+                                                ZVR-Zahl: 837615029
+                                            </p>
+                                            <p>
+                                                Tel +43 1 929 14 98<br />
+                                                <a href="http://www.vgt.at" target="_blank" title="VGT Website">www.vgt.at</a>, <a href="mailto:vgt@vgt.at">vgt@vgt.at</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- CONTENT TABLE RIGHT -->
+                            <table class="flexibleContainerRight" align="right" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td align="center" valign="top" class="textContent ckediting_enabled" contenteditable="true">
+                                            <p>
+                                                <a href="https://www.facebook.com/VGT.Austria/" target="_new"><img alt="Facebook" class="socialIcon" src="/fso_website_email_vgtf/static/src/img/social_facebook_ok.png" border="0"/></a>
+                                                <![CDATA[&nbsp;]]>
+                                                <a href="https://twitter.com/vgt_at" target="_new"><img alt="Twitter" class="socialIcon" src="/fso_website_email_vgtf/static/src/img/social_twitter_ok.png" border="0"/></a>
+                                                <![CDATA[&nbsp;]]>
+                                                <a href="https://plus.google.com/u/0/115684987418979324418/post" target="_new"><img alt="Google+" class="socialIcon" src="/fso_website_email_vgtf/static/src/img/social_google_ok.png" border="0"/></a>
+                                                <![CDATA[&nbsp;]]>
+                                                <a href="http://www.vgt.at" target="_new"><img alt="Web" class="socialIcon" src="/fso_website_email_vgtf/static/src/img/social_web_ok.png" border="0"/></a>
+                                                <![CDATA[&nbsp;]]>
+                                                <a href="https://www.youtube.com/user/vgtaustria" target="_new"><img alt="Youtube" class="socialIcon" src="/fso_website_email_vgtf/static/src/img/social_youtube_ok.png" border="0"/></a>
+                                            </p>
+                                            <table class="footer-spenden-button mobile-full" style="padding-top: 4px;" cellspacing="9" cellpadding="0" border="0" align="right">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #3f3f3f; font-weight: normal; padding-left: 18px; padding-right: 18px; background-color: #a5c743; border-radius: 4px;" width="auto" valign="middle" height="26" bgcolor="#a5c743" align="center"><a href="http://www.vgt.at/spenden/#spenden" style="text-decoration: none; color: #0c0c0c; font-weight: normal;" target="_new"><strong>Jetzt spenden!</strong></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </t>
+
+                        <t t-call="fso_website_email.snippet_block">
+                            <hr />
+                            <p><a href="https://vgt.at/dsh">Datenschutzhinweis</a></p>
+                            <p>
+                                Du erhältst dieses E-Mail, weil du für den VGT-Newsletter angemeldet bist.
+                                Falls du unseren Newsletter nicht mehr erhalten willst, kannst du ihn hier
+                                <a href="https://vgt.at/newsletter-abmelden">abbestellen</a>.
+                            </p>
+                        </t>
+
+                    </div>
+                </div>
+
+            </div>
+        </xpath>
+    </template>
+
+</data>
+</openerp>

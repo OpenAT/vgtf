@@ -1,0 +1,95 @@
+#bodyCell {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+body,
+#bodyCell,
+#bodyCell #combined_header_snippet > table:nth-child(1) {
+    background-color: #E3F4CA;
+    color: #7f7f7f;
+}
+
+#bodyCell #combined_header_snippet > table:nth-child(1) > tbody > tr > td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#bodyCell #combined_header_snippet > table:nth-child(1) * {
+    text-align: right;
+}
+
+#bodyCell #combined_header_snippet .snippet_block_banner_image {
+    width: 100%;
+}
+
+#bodyCell a,
+#bodyCell #combined_header_snippet > table:nth-child(1) a {
+    color: #7f7f7f;
+    text-decoration: underline;
+}
+
+#bodyCell .flexibleContainer,
+#bodyCell .flexibleContainer a {
+    color: #3f3f3f;
+}
+
+#combined_footer_snippet > table > tbody > tr > td {
+    background-color: #E3F4CA;
+}
+
+#combined_footer_snippet > table:first-of-type > tbody > tr > td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#combined_footer_snippet hr {
+    height: 0px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+#bodyCell #combined_footer_snippet *,
+#bodyCell #combined_footer_snippet .flexibleContainer a,
+#bodyCell #combined_footer_snippet .flexibleContainer p {
+    color: #7f7f7f;
+}
+
+#bodyCell #combined_footer_snippet .flexibleContainerLeft p {
+    text-align: left;
+}
+
+#bodyCell #combined_footer_snippet .flexibleContainerRight p {
+    text-align: right;
+}
+
+#bodyCell #combined_footer_snippet .flexibleContainerLeft p,
+#bodyCell #combined_footer_snippet .flexibleContainerRight p {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+#bodyCell #combined_footer_snippet .footer-spenden-button a,
+#bodyCell #combined_footer_snippet .footer-spenden-button a * {
+    color: #0c0c0c;
+}
+#bodyCell #combined_footer_snippet .footer-spenden-button {
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 9px;
+}
+
+@media screen and (max-width: 480px) {
+    #bodyCell #combined_footer_snippet .flexibleContainerLeft p {
+        text-align: center;
+    }
+
+    #bodyCell #combined_footer_snippet .flexibleContainerRight p {
+        text-align: center;
+    }
+
+    #bodyCell #combined_footer_snippet .footer-spenden-button {
+        width: 100%;
+    }
+}
