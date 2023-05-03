@@ -7,18 +7,14 @@
 
 body,
 #bodyCell,
-#bodyCell #combined_header_snippet > table:nth-child(1) {
+#bodyCell #combined_header_snippet table.header-web-version td {
     background-color: #E3F4CA;
     color: #7f7f7f;
 }
 
-#bodyCell #combined_header_snippet > table:nth-child(1) > tbody > tr > td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#bodyCell #combined_header_snippet > table:nth-child(1) * {
-    text-align: right;
+#bodyCell #combined_header_snippet table.header-web-version p {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #bodyCell #combined_header_snippet .snippet_block_banner_image {
@@ -41,14 +37,14 @@ body,
 }
 
 #combined_footer_snippet > table:first-of-type > tbody > tr > td {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 10px;
 }
 
 #combined_footer_snippet hr {
     height: 0px;
-    background-color: black;
-    border: 1px solid black;
+    background-color: #7f7f7f;
+    border: 1px solid #7f7f7f !important;
 }
 
 #bodyCell #combined_footer_snippet *,
