@@ -2,14 +2,20 @@
     padding-top: 0px;
     padding-bottom: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 body,
 #bodyCell,
+#email_body_html,
 #bodyCell #combined_header_snippet table.header-web-version td {
-    background-color: #E3F4CA;
-    color: #7f7f7f;
+    background-color: #edebe4;
+    color: #585757;
+}
+
+#email_body_html a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 #bodyCell #combined_header_snippet table.header-web-version p {
@@ -21,15 +27,13 @@ body,
     width: 100%;
 }
 
-#bodyCell a,
 #bodyCell #combined_header_snippet > table:nth-child(1) a {
-    color: #7f7f7f;
+    color: #585757;
     text-decoration: underline;
 }
 
-#bodyCell .flexibleContainer,
-#bodyCell .flexibleContainer a {
-    color: #3f3f3f;
+#bodyCell .flexibleContainer {
+    color: #585757;
 }
 
 #combined_footer_snippet > table > tbody > tr > td {
@@ -43,14 +47,13 @@ body,
 
 #combined_footer_snippet hr {
     height: 0px;
-    background-color: #7f7f7f;
-    border: 1px solid #7f7f7f !important;
+    background-color: #585757;
+    border: 1px solid #585757 !important;
 }
 
 #bodyCell #combined_footer_snippet *,
-#bodyCell #combined_footer_snippet .flexibleContainer a,
 #bodyCell #combined_footer_snippet .flexibleContainer p {
-    color: #7f7f7f;
+    color: #585757;
 }
 
 #bodyCell #combined_footer_snippet .flexibleContainerLeft p {
@@ -88,4 +91,179 @@ body,
     #bodyCell #combined_footer_snippet .footer-spenden-button {
         width: 100%;
     }
+}
+
+/************************
+    New theme colors
+************************/
+
+/*
+    Background styles
+*/
+
+.vgtf_sb_bg_transparent .flexibleContainerCell,
+.vgtf_sb_bg_transparent .flexibleContainerCell .nestedContainerCell {
+    background-color: transparent;
+}
+
+.vgtf_sb_bg_white .flexibleContainerCell,
+.vgtf_sb_bg_white .flexibleContainerCell .nestedContainerCell {
+    background-color: #ffffff;
+}
+
+.vgtf_sb_bg_lightgray .flexibleContainerCell,
+.vgtf_sb_bg_lightgray .flexibleContainerCell .nestedContainerCell {
+    background-color: #a1a4a5;
+}
+
+.vgtf_sb_bg_gray .flexibleContainerCell,
+.vgtf_sb_bg_gray .flexibleContainerCell .nestedContainerCell {
+    background-color: #585757;
+    color: white;
+}
+
+.vgtf_sb_bg_green1 .flexibleContainerCell,
+.vgtf_sb_bg_green1 .flexibleContainerCell .nestedContainerCell {
+    background-color: #94C11F;
+    color: white;
+}
+
+.vgtf_sb_bg_green2 .flexibleContainerCell,
+.vgtf_sb_bg_green2 .flexibleContainerCell .nestedContainerCell {
+    background-color: #BCCF00;
+}
+
+.vgtf_sb_bg_orange .flexibleContainerCell,
+.vgtf_sb_bg_orange .flexibleContainerCell .nestedContainerCell {
+    background-color: #f7a600;
+}
+
+/*
+    Foreground styles
+*/
+
+.vgtf_sb_fg_white .flexibleContainerCell,
+.vgtf_sb_fg_white .flexibleContainerCell .nestedContainerCell {
+    color: white;
+}
+
+.vgtf_sb_fg_gray .flexibleContainerCell,
+.vgtf_sb_fg_gray .flexibleContainerCell .nestedContainerCell {
+    color: #585757;
+}
+
+.vgtf_sb_fg_black .flexibleContainerCell,
+.vgtf_sb_fg_black .flexibleContainerCell .nestedContainerCell {
+    color: black;
+}
+
+/*
+    Bullet proof button styles
+*/
+#email_body_html .snippet_block_bpbutton .bpbutton_table a,
+#email_body_html .snippet_block_bpbutton .bpbutton_table a:visited,
+#email_body_html .snippet_block_bpbutton .bpbutton_table a:hover {
+    text-decoration: none;
+}
+
+/* green */
+.snippet_block_bpbutton.bpbutton_style_green .bpbutton_table,
+.snippet_block_bpbutton.bpbutton_style_green .bpbutton_table a,
+.snippet_block_bpbutton.bpbutton_style_green .bpbutton_table a:visited,
+.snippet_block_bpbutton.bpbutton_style_green .bpbutton_table a:hover {
+    background-color: #94c11f;
+    border-color: #94c11f;
+    color: white;
+}
+
+/* orange */
+.snippet_block_bpbutton.bpbutton_style_orange .bpbutton_table,
+.snippet_block_bpbutton.bpbutton_style_orange .bpbutton_table a,
+.snippet_block_bpbutton.bpbutton_style_orange .bpbutton_table a:visited,
+.snippet_block_bpbutton.bpbutton_style_orange .bpbutton_table a:hover {
+    background-color: #f7a600;
+    border-color: #f7a600;
+    color: white;
+}
+
+/*
+    Foreground bp button styles
+*/
+#email_body_html .snippet_block_bpbutton.bpbutton_foreground_style_gray a {
+    color: #585757;
+}
+
+#email_body_html .snippet_block_bpbutton.bpbutton_foreground_style_black a {
+    color: black;
+}
+
+#email_body_html .snippet_block_bpbutton.bpbutton_foreground_style_white a {
+    color: white;
+}
+
+/*
+    Additional bullet proof button sizes
+*/
+
+/* normal plus */
+.snippet_block_bpbutton.bpbutton_normal_p .bpbutton_table {
+
+}
+.snippet_block_bpbutton.bpbutton_normal_p .bpbutton_table a {
+    font-size: 18px;
+    border-width: 0.5em 1.25em;
+}
+
+@media only screen and (max-width: 480px) {
+    .snippet_block_bpbutton.bpbutton_normal_p .bpbutton_table {
+        border-radius: 0px;
+    }
+}
+
+/*
+    Additional drop in button sizes
+*/
+
+#emailBody span.drop_in_button.dadi_di_button_normal_p,
+#emailBody span.drop_in_button.dadi_di_button_normal_p a {
+    font-size: 20px;
+}
+
+#emailBody span.drop_in_button.dadi_di_button_normal_pp,
+#emailBody span.drop_in_button.dadi_di_button_normal_pp a {
+    font-size: 26px;
+}
+
+/*
+    Additional drop in button colors
+*/
+#emailBody span.drop_in_button.vgtf_di_button_green a:visited,
+#emailBody span.drop_in_button.vgtf_di_button_green a {
+    background-color: #94c11f;
+    border-color: #94c11f;
+}
+
+#emailBody span.drop_in_button.vgtf_di_button_orange a:visited,
+#emailBody span.drop_in_button.vgtf_di_button_orange a {
+    background-color: #f7a600;
+    border-color: #f7a600;
+}
+
+/*
+    Drop in button foreground colors
+*/
+
+#emailBody span.drop_in_button.drop_in_button_foreground_gray a:visited,
+#emailBody span.drop_in_button.drop_in_button_foreground_gray a {
+    color: #585757;
+}
+
+#emailBody span.drop_in_button.drop_in_button_foreground_black a:visited,
+#emailBody span.drop_in_button.drop_in_button_foreground_black a {
+    color: black;
+}
+
+#emailBody span.drop_in_button.drop_in_button_foreground_white a:visited,
+#emailBody span.drop_in_button.drop_in_button_foreground_white a {
+    color: white;
 }

@@ -31,6 +31,245 @@
             </div>
         </xpath>
 
+        <xpath expr="//div[@data-snippet-option-id='dadi_sb_fg_color']" position="replace">
+            <div data-snippet-option-id='dadi_sb_fg_color'
+                 data-selector=".snippet_block_text_intro,
+                                .snippet_block_text_image_left,
+                                .snippet_block_text_image_right">
+                <!-- Snippet options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Foreground Style</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''>
+                            <a>None</a>
+                        </li>
+                        <li data-value='vgtf_sb_fg_white'>
+                            <a>Weiß</a>
+                        </li>
+                        <li data-value='vgtf_sb_fg_gray'>
+                            <a>Grau</a>
+                        </li>
+                        <li data-value='vgtf_sb_fg_black'>
+                            <a>Schwarz</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_color']" position="replace">
+            <div data-snippet-option-id='dadi_sb_bg_color'
+                 data-selector=".snippet_block, .snippet_block_bpbutton">
+                <!-- Snippet options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Background Style</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''>
+                            <a>None</a>
+                        </li>
+                        <li data-value='vgtf_sb_bg_transparent'>
+                            <a>Transparent</a>
+                        </li>
+                        <li data-value='vgtf_sb_bg_white'>
+                            <a>Weiß</a>
+                        </li>
+                        <li data-value='vgtf_sb_bg_lightgray'>
+                            <a>Hellgrau</a>
+                        </li>
+                        <li data-value='vgtf_sb_bg_gray'>
+                            <a>Grau</a>
+                        </li>
+                        <li data-value='vgtf_sb_bg_green1'>
+                            <a>Grün (94C11F)</a>
+                        </li>
+                        <li data-value='vgtf_sb_bg_green2'>
+                            <a>Grün (BCCF00)</a>
+                        </li>
+                        <li data-value='vgtf_sb_bg_orange'>
+                            <a>Orange</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@data-snippet-option-id='snippet_block_bpbutton_style']">
+            <!-- OPTION_GROUP: snippet_block_bpbutton_style -->
+            <div data-snippet-option-id='snippet_block_bpbutton_style'
+                 data-selector=".snippet_block_bpbutton">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Style</a>
+                    <ul class="dropdown-menu">
+                        <li data-value='bpbutton_style_default'>
+                            <a>Default</a>
+                        </li>
+                        <li data-value='bpbutton_style_transparent'>
+                            <a>Transparent</a>
+                        </li>
+                        <li data-value='bpbutton_style_black'>
+                            <a>Black</a>
+                        </li>
+                       <li data-value='bpbutton_style_white'>
+                            <a>White</a>
+                        </li>
+                       <li data-value='bpbutton_style_green'>
+                            <a>Grün</a>
+                        </li>
+                       <li data-value='bpbutton_style_orange'>
+                            <a>Orange</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@id='snippet_options']" position="inside">
+            <!-- OPTION_GROUP: snippet_block_bpbutton_foreground_style -->
+            <div data-snippet-option-id='snippet_block_bpbutton_foreground_style'
+                 data-selector=".snippet_block_bpbutton">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Fordergrundstil</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''>
+                            <a>Standard</a>
+                        </li>
+                        <li data-value='bpbutton_foreground_style_gray'>
+                            <a>Grau</a>
+                        </li>
+                        <li data-value='bpbutton_foreground_style_black'>
+                            <a>Schwarz</a>
+                        </li>
+                       <li data-value='bpbutton_foreground_style_white'>
+                            <a>Weiß</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@id='snippet_options']" position="inside">
+            <!-- OPTION_GROUP: snippet_block_bpbutton_foreground_style -->
+            <div data-snippet-option-id='drop_in_button_foreground_style'
+                 data-selector=".drop_in_button">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Fordergrundstil</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''>
+                            <a>Standard</a>
+                        </li>
+                        <li data-value='drop_in_button_foreground_gray'>
+                            <a>Grau</a>
+                        </li>
+                        <li data-value='drop_in_button_foreground_black'>
+                            <a>Schwarz</a>
+                        </li>
+                       <li data-value='bpbutton_foreground_style_white'>
+                            <a>Weiß</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@data-snippet-option-id='snippet_block_bpbutton_size']">
+            <!-- OPTION_GROUP: snippet_block_bpbutton_size -->
+            <div data-snippet-option-id='snippet_block_bpbutton_size'
+                 data-selector=".snippet_block_bpbutton">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Size</a>
+                    <ul class="dropdown-menu">
+                        <li data-value='bpbutton_normal'>
+                            <a>Normal</a>
+                        </li>
+                        <li data-value='bpbutton_normal_p'>
+                            <a>Normal+</a>
+                        </li>
+                        <li data-value='bpbutton_medium'>
+                            <a>Medium</a>
+                        </li>
+                        <li data-value='bpbutton_large'>
+                            <a>Large</a>
+                        </li>
+                        <li data-value='bpbutton_huge'>
+                            <a>Huge</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@data-snippet-option-id='drop_in_button_size']">
+            <!-- OPTION_GROUP: drop_in_button_size -->
+            <div data-snippet-option-id='drop_in_button_size'
+                 data-selector=".drop_in_button">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Size</a>
+                    <ul class="dropdown-menu">
+                        <li data-value='dadi_di_button_normal'>
+                            <a>Normal</a>
+                        </li>
+                        <li data-value='dadi_di_button_normal_p'>
+                            <a>Normal+</a>
+                        </li>
+                        <li data-value='dadi_di_button_normal_pp'>
+                            <a>Normal++</a>
+                        </li>
+                        <li data-value='dadi_di_button_medium'>
+                            <a>Medium</a>
+                        </li>
+                        <li data-value='dadi_di_button_large'>
+                            <a>Large</a>
+                        </li>
+                        <li data-value='dadi_di_button_huge'>
+                            <a>Huge</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@data-snippet-option-id='drop_in_button_style']">
+            <!-- OPTION_GROUP: drop_in_button_style -->
+            <div data-snippet-option-id='drop_in_button_style'
+                 data-selector=".drop_in_button">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Style</a>
+                    <ul class="dropdown-menu">
+                        <li data-value='dadi_di_button_default'>
+                            <a>Default</a>
+                        </li>
+                        <li data-value='dadi_di_button_transparent'>
+                            <a>Transparent</a>
+                        </li>
+                        <li data-value='dadi_di_button_black'>
+                            <a>Black</a>
+                        </li>
+                        <li data-value='dadi_di_button_green'>
+                            <a>Green</a>
+                        </li>
+                        <li data-value='vgtf_di_button_green'>
+                            <a>Grün (94c11f)</a>
+                        </li>
+                        <li data-value='vgtf_di_button_orange'>
+                            <a>Orange</a>
+                        </li>
+                        <li data-value='dadi_di_button_yellow'>
+                            <a>Yellow</a>
+                        </li>
+                        <li data-value='dadi_di_button_red'>
+                            <a>Red</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
     </template>
 
 </data>
