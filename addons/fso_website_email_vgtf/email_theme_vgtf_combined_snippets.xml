@@ -294,6 +294,60 @@
                     </div>
                 </div>
 
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_vgtf/static/src/img/thumbnail-jetzt-spenden-snippet.png"
+                            style="background-color: white;"/>
+                        <span class="oe_snippet_thumbnail_title">Spenden</span>
+                    </div>
+                    <!-- SNIPPET BLOCK -->
+                    <div id="combined_spenden_snippet" class="oe_snippet_body ckediting_disabled snippet_block snippet_block_text_image_right vgtf_snippet_block_no_header_margin vgtf_sb_bg_gray vgtf_sb_fg_white" contenteditable="false">
+
+                        <t t-call="fso_website_email.snippet_block">
+                            <t t-set="nockedit" t-value="True"/>
+
+                            <!-- CONTENT TABLE LEFT -->
+                            <table class="flexibleContainerLeft" align="left" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td valign="top" class="textContent ckediting_enabled" contenteditable="true">
+                                            <h2>Ja, ich möchte Spenden!</h2>
+                                            <p>
+                                                Viele Tiere leben unter miserablen Bedingungen. Wir nehmen
+                                                dies nicht einfach hin, sondern setzen Ihre Spenden zu 100%
+                                                für den Tierschutz ein! Da wir uns komplett aus Spenden
+                                                finanzieren, ist jede Unterstützung sehr wichtig für uns.
+                                                Gemeinsam bewegen wir etwas für die Tiere.
+                                            </p>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- CONTENT TABLE RIGHT -->
+                            <table class="flexibleContainerRight" align="right" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td align="center" valign="middle" class="imageContent ckediting_enabled" contenteditable="true">
+                                            <br />
+                                            <a href="https://vgt.at/spenden/?patenschaft">
+                                                <img src="/fso_website_email_vgtf/static/src/img/footer-jetzt-spenden.png" class="flexibleImage"/>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </t>
+                    </div>
+                </div>
+
             </div>
         </xpath>
     </template>

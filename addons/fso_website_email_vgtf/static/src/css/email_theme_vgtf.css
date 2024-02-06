@@ -291,7 +291,13 @@ body,
 .vgtf_snippet_block h3,
 .vgtf_snippet_block h4,
 .vgtf_snippet_block h5,
-.vgtf_snippet_block h6 {
+.vgtf_snippet_block h6,
+.vgtf_snippet_block_no_header_margin h1,
+.vgtf_snippet_block_no_header_margin h2,
+.vgtf_snippet_block_no_header_margin h3,
+.vgtf_snippet_block_no_header_margin h4,
+.vgtf_snippet_block_no_header_margin h5,
+.vgtf_snippet_block_no_header_margin h6 {
     margin-top: 0px;
 }
 
@@ -319,6 +325,8 @@ body,
     margin-bottom: 20px;
 }
 
+/* vgtf_snippet_block */
+
 .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft,
 .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
     width: 80px;
@@ -329,7 +337,20 @@ body,
     width: 460px;
 }
 
+/* spenden snippet */
+
+#combined_spenden_snippet.snippet_block_text_image_right .flexibleContainerLeft,
+#combined_spenden_snippet.snippet_block_text_image_right .flexibleContainerLeft .flexibleImage {
+    width: 380px;
+
+}
+#combined_spenden_snippet.snippet_block_text_image_right .flexibleContainerRight,
+#combined_spenden_snippet.snippet_block_text_image_right .flexibleContainerRight .flexibleImage {
+    width: 160px;
+}
+
 @media only screen and (max-width: 480px) {
+    /* vgtf_snippet_block */
     .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft,
     .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
         width: 80px;
@@ -342,6 +363,21 @@ body,
         text-align: -webkit-center !important;
     }
     .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
+        display: inline-block;
+    }
+
+    /* spenden snippet */
+    #combined_spenden_snippet.snippet_block_text_image_right .flexibleContainerRight,
+    #combined_spenden_snippet.snippet_block_text_image_right .flexibleContainerRight .flexibleImage {
+        width: 160px;
+    }
+    #combined_spenden_snippet.snippet_block_text_image_right .flexibleContainerRight {
+        width: 100%;
+        max-width: 100%;
+        text-align: center !important;
+        text-align: -webkit-center !important;
+    }
+    #combined_spenden_snippet.snippet_block_text_image_right .flexibleContainerRight .flexibleImage {
         display: inline-block;
     }
 }
