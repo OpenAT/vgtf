@@ -396,6 +396,54 @@
                     </div>
                 </div>
 
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_vgtf/static/src/img/thumbnail-social.png"/>
+                        <span class="oe_snippet_thumbnail_title">Social Media</span>
+                    </div>
+                    <!-- SNIPPET BLOCK -->
+                    <div id="combined_social_snippet" class="vgtf_snippet_block oe_snippet_body ckediting_disabled snippet_block snippet_block_text_image_left vgtf_sb_bg_green1 vgtf_sb_fg_white vgtf_margin_option_medium" contenteditable="false">
+                        <t t-call="fso_website_email.snippet_block">
+                            <t t-set="nockedit" t-value="True"/>
+
+                            <!-- CONTENT TABLE LEFT -->
+                            <table class="flexibleContainerLeft" align="left" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td align="left" valign="top" class="imageContent ckediting_enabled" contenteditable="true">
+                                            <img src="/fso_website_email_vgtf/static/src/img/footer-nichts-verpassen.png" alt="Nichts mehr verpassen" class="flexibleImage"/>
+                                            <strong>Erhällst du schon den VGT-Newsletter?</strong><br />
+                                            Wenn nicht, einfach hier den <a href="https://vgt.at/service/newsletter/subscribe/index.php">Newsletter bestellen</a>.<br />
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- CONTENT TABLE RIGHT -->
+                            <table class="flexibleContainerRight" align="right" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td valign="bottom" class="textContent ckediting_enabled" contenteditable="true">
+                                            <a href="https://www.facebook.com/VGT.Austria/"><img src="/fso_website_email_vgtf/static/src/img/footer-social-facebook.png" alt="Facebook" /></a>
+                                            <a href="https://www.tiktok.com/@vgt.austria"><img src="/fso_website_email_vgtf/static/src/img/footer-social-tiktok.png" alt="Tik Tok" /></a>
+                                            <a href="https://www.instagram.com/vgt.austria/"><img src="/fso_website_email_vgtf/static/src/img/footer-social-instagram.png" alt="Instagram" /></a>
+                                            <a href="https://twitter.com/vgt_at/status/1272454522061950976"><img src="/fso_website_email_vgtf/static/src/img/footer-social-x.png" alt="X" /></a>
+                                            <a href="https://www.youtube.com/user/vgtaustria?cbrd=1"><img src="/fso_website_email_vgtf/static/src/img/footer-social-youtube.png" alt="YouTube" /></a>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </t>
+                    </div>
+                </div>
+
             </div>
         </xpath>
     </template>

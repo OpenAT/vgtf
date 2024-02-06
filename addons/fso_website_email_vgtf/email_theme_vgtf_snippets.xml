@@ -85,6 +85,9 @@
                         <li data-value='vgtf_sb_bg_green2'>
                             <a>Grün (BCCF00)</a>
                         </li>
+                        <li data-value='vgtf_sb_bg_green4'>
+                            <a>Grün (88C946)</a>
+                        </li>
                         <li data-value='vgtf_sb_bg_green3'>
                             <a>Grün (7AC183)</a>
                         </li>
