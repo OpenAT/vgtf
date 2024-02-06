@@ -175,7 +175,7 @@
                                     <tr>
 
                                         <td align="center" valign="top" class="imageContent ckediting_enabled" contenteditable="true">
-                                            <img src="/fso_website_email_vgtf/static/src/img/footer-vortrag.png" class="flexibleImage"/>
+                                            <img src="/fso_website_email_vgtf/static/src/img/footer-vortrag.png" alt="Vortrag" class="flexibleImage"/>
                                         </td>
 
                                     </tr>
@@ -221,7 +221,7 @@
                                     <tr>
 
                                         <td align="center" valign="top" class="imageContent ckediting_enabled" contenteditable="true">
-                                            <img src="/fso_website_email_vgtf/static/src/img/footer-demo.png" class="flexibleImage"/>
+                                            <img src="/fso_website_email_vgtf/static/src/img/footer-demo.png" alt="Demo" class="flexibleImage"/>
                                         </td>
 
                                     </tr>
@@ -267,7 +267,7 @@
                                     <tr>
 
                                         <td align="center" valign="top" class="imageContent ckediting_enabled" contenteditable="true">
-                                            <img src="/fso_website_email_vgtf/static/src/img/footer-screening.png" class="flexibleImage"/>
+                                            <img src="/fso_website_email_vgtf/static/src/img/footer-screening.png" alt="Screening" class="flexibleImage"/>
                                         </td>
 
                                     </tr>
@@ -303,7 +303,7 @@
                         <span class="oe_snippet_thumbnail_title">Spenden</span>
                     </div>
                     <!-- SNIPPET BLOCK -->
-                    <div id="combined_spenden_snippet" class="oe_snippet_body ckediting_disabled snippet_block snippet_block_text_image_right vgtf_snippet_block_no_header_margin vgtf_sb_bg_gray vgtf_sb_fg_white" contenteditable="false">
+                    <div id="combined_spenden_snippet" class="vgtf_snippet_block oe_snippet_body ckediting_disabled snippet_block snippet_block_text_image_right vgtf_snippet_block_no_header_margin vgtf_sb_bg_gray vgtf_sb_fg_white vgtf_margin_option_medium" contenteditable="false">
 
                         <t t-call="fso_website_email.snippet_block">
                             <t t-set="nockedit" t-value="True"/>
@@ -336,8 +336,56 @@
                                         <td align="center" valign="middle" class="imageContent ckediting_enabled" contenteditable="true">
                                             <br />
                                             <a href="https://vgt.at/spenden/?patenschaft">
-                                                <img src="/fso_website_email_vgtf/static/src/img/footer-jetzt-spenden.png" class="flexibleImage"/>
+                                                <img src="/fso_website_email_vgtf/static/src/img/footer-jetzt-spenden.png" alt="Spenden" class="flexibleImage"/>
                                             </a>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </t>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_vgtf/static/src/img/thumbnail-kontakt.png"/>
+                        <span class="oe_snippet_thumbnail_title">Kontakt</span>
+                    </div>
+                    <!-- SNIPPET BLOCK -->
+                    <div id="combined_kontakt_snippet" class="vgtf_snippet_block oe_snippet_body ckediting_disabled snippet_block snippet_block_text_image_left vgtf_sb_bg_white vgtf_sb_fg_gray vgtf_margin_option_medium" contenteditable="false">
+                        <t t-call="fso_website_email.snippet_block">
+                            <t t-set="nockedit" t-value="True"/>
+
+                            <!-- CONTENT TABLE LEFT -->
+                            <table class="flexibleContainerLeft" align="left" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td align="center" valign="top" class="imageContent ckediting_enabled" contenteditable="true">
+                                            <img src="/fso_website_email_vgtf/static/src/img/footer-logo.png" alt="VGT Logo" class="flexibleImage"/>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- CONTENT TABLE RIGHT -->
+                            <table class="flexibleContainerRight" align="right" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td valign="top" class="textContent ckediting_enabled" contenteditable="true">
+                                            <p>
+                                                <strong>VEREIN GEGEN TIERFABRIKEN</strong><br />
+                                                Meidlinger Hauptstraße 63/6, 1120 Wien<br />
+                                                ZVR-Zahl: 837615029<br />
+                                                Tel: +43 1 929 14 98<br />
+                                                <a href="https://www.vgt.at">www.vgt.at</a>, <a href="mailto:vgt.at">vgt@vgt.at</a><br />
+                                            </p>
                                         </td>
 
                                     </tr>
