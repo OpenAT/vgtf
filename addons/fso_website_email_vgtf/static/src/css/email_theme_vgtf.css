@@ -2,7 +2,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body,
@@ -131,6 +131,11 @@ body,
 .vgtf_sb_bg_green2 .flexibleContainerCell,
 .vgtf_sb_bg_green2 .flexibleContainerCell .nestedContainerCell {
     background-color: #BCCF00;
+}
+
+.vgtf_sb_bg_green3 .flexibleContainerCell,
+.vgtf_sb_bg_green3 .flexibleContainerCell .nestedContainerCell {
+    background-color: #7AC183;
 }
 
 .vgtf_sb_bg_orange .flexibleContainerCell,
@@ -266,4 +271,77 @@ body,
 #emailBody span.drop_in_button.drop_in_button_foreground_white a:visited,
 #emailBody span.drop_in_button.drop_in_button_foreground_white a {
     color: white;
+}
+
+/*************************************
+    Neue snipptest 2024-02-05
+*************************************/
+
+#emailBody h1,
+#emailBody h2,
+#emailBody h3,
+#emailBody h4,
+#emailBody h5,
+#emailBody h6 {
+    font-weight: bold;
+}
+
+.vgtf_snippet_block h1,
+.vgtf_snippet_block h2,
+.vgtf_snippet_block h3,
+.vgtf_snippet_block h4,
+.vgtf_snippet_block h5,
+.vgtf_snippet_block h6 {
+    margin-top: 0px;
+}
+
+#combined_screening_snippet.vgtf_sb_fg_gray h1,
+#combined_screening_snippet.vgtf_sb_fg_gray h2,
+#combined_screening_snippet.vgtf_sb_fg_gray h3,
+#combined_screening_snippet.vgtf_sb_fg_gray h4,
+#combined_screening_snippet.vgtf_sb_fg_gray h5,
+#combined_screening_snippet.vgtf_sb_fg_gray h6 {
+    color: #BCCF00;
+}
+
+.vgtf_margin_option_small {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.vgtf_margin_option_medium {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vgtf_margin_option_large {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft,
+.vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
+    width: 80px;
+
+}
+.vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerRight,
+.vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerRight .flexibleImage {
+    width: 460px;
+}
+
+@media only screen and (max-width: 480px) {
+    .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft,
+    .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
+        width: 80px;
+    }
+
+    .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft {
+        width: 100%;
+        max-width: 100%;
+        text-align: center !important;
+        text-align: -webkit-center !important;
+    }
+    .vgtf_snippet_block.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
+        display: inline-block;
+    }
 }

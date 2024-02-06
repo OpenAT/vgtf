@@ -85,6 +85,9 @@
                         <li data-value='vgtf_sb_bg_green2'>
                             <a>Grün (BCCF00)</a>
                         </li>
+                        <li data-value='vgtf_sb_bg_green3'>
+                            <a>Grün (7AC183)</a>
+                        </li>
                         <li data-value='vgtf_sb_bg_orange'>
                             <a>Orange</a>
                         </li>
@@ -264,6 +267,30 @@
                         </li>
                         <li data-value='dadi_di_button_red'>
                             <a>Red</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@id='snippet_options']" position="inside">
+            <div data-snippet-option-id='vgtf_margin_options'
+                 data-selector=".vgtf_snippet_block">
+                <!-- Snippet options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">Rand</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''>
+                            <a>Ohne</a>
+                        </li>
+                        <li data-value='vgtf_margin_option_small'>
+                            <a>Klein</a>
+                        </li>
+                        <li data-value='vgtf_margin_option_medium'>
+                            <a>Normal</a>
+                        </li>
+                        <li data-value='vgtf_margin_option_large'>
+                            <a>Groß</a>
                         </li>
                     </ul>
                 </li>

@@ -155,6 +155,145 @@
                     </div>
                 </div>
 
+
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_vgtf/static/src/img/footer-vortrag.png"
+                             style="background-color: white;"/>
+                        <span class="oe_snippet_thumbnail_title">Vertrag</span>
+                    </div>
+                    <!-- SNIPPET BLOCK -->
+                    <div id="combined_vortrag_snippet" class="vgtf_snippet_block oe_snippet_body ckediting_disabled snippet_block snippet_block_text_image_left vgtf_sb_bg_green3 vgtf_sb_fg_white vgtf_margin_option_medium" contenteditable="false">
+                        <t t-call="fso_website_email.snippet_block">
+                            <t t-set="nockedit" t-value="True"/>
+
+                            <!-- CONTENT TABLE LEFT -->
+                            <table class="flexibleContainerLeft" align="left" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td align="center" valign="top" class="imageContent ckediting_enabled" contenteditable="true">
+                                            <img src="/fso_website_email_vgtf/static/src/img/footer-vortrag.png" class="flexibleImage"/>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- CONTENT TABLE RIGHT -->
+                            <table class="flexibleContainerRight" align="right" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td valign="top" class="textContent ckediting_enabled" contenteditable="true">
+                                            <h2>Vortrag</h2>
+                                            <p>
+                                                Vestibulum vitae metus sed purus elementum.
+                                            </p>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </t>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_vgtf/static/src/img/footer-demo.png"
+                             style="background-color: white;"/>
+                        <span class="oe_snippet_thumbnail_title">Demo</span>
+                    </div>
+                    <!-- SNIPPET BLOCK -->
+                    <div id="combined_demo_snippet" class="vgtf_snippet_block oe_snippet_body ckediting_disabled snippet_block snippet_block_text_image_left vgtf_sb_bg_green2 vgtf_sb_fg_gray vgtf_margin_option_medium" contenteditable="false">
+                        <t t-call="fso_website_email.snippet_block">
+                            <t t-set="nockedit" t-value="True"/>
+
+                            <!-- CONTENT TABLE LEFT -->
+                            <table class="flexibleContainerLeft" align="left" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td align="center" valign="top" class="imageContent ckediting_enabled" contenteditable="true">
+                                            <img src="/fso_website_email_vgtf/static/src/img/footer-demo.png" class="flexibleImage"/>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- CONTENT TABLE RIGHT -->
+                            <table class="flexibleContainerRight" align="right" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td valign="top" class="textContent ckediting_enabled" contenteditable="true">
+                                            <h2>Demo</h2>
+                                            <p>
+                                                Vestibulum vitae metus sed purus elementum.
+                                            </p>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </t>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_vgtf/static/src/img/footer-screening.png"
+                             style="background-color: white;"/>
+                        <span class="oe_snippet_thumbnail_title">Image Left</span>
+                    </div>
+                    <!-- SNIPPET BLOCK -->
+                    <div id="combined_screening_snippet" class="vgtf_snippet_block oe_snippet_body ckediting_disabled snippet_block snippet_block_text_image_left vgtf_sb_bg_white vgtf_sb_fg_gray vgtf_margin_option_medium" contenteditable="false">
+                        <t t-call="fso_website_email.snippet_block">
+                            <t t-set="nockedit" t-value="True"/>
+
+                            <!-- CONTENT TABLE LEFT -->
+                            <table class="flexibleContainerLeft" align="left" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td align="center" valign="top" class="imageContent ckediting_enabled" contenteditable="true">
+                                            <img src="/fso_website_email_vgtf/static/src/img/footer-screening.png" class="flexibleImage"/>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- CONTENT TABLE RIGHT -->
+                            <table class="flexibleContainerRight" align="right" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+
+                                        <td valign="top" class="textContent ckediting_enabled" contenteditable="true">
+                                            <h2>Screening</h2>
+                                            <p>
+                                                Vestibulum vitae metus sed purus elementum.
+                                            </p>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </t>
+                    </div>
+                </div>
+
             </div>
         </xpath>
     </template>
