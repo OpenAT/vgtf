@@ -446,3 +446,11 @@ body,
         vertical-align: top;
     }
 }
+
+.vgtf_tiny {
+    font-size: 12px;
+}
+
+.vgtf_small {
+    font-size: 14px;
+}

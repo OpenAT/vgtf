@@ -47,9 +47,9 @@
 
             // styles dropdown in toolbar
             config.stylesSet = [
-                {name: 'p Normal', element: 'p'},
-                {name: 'p Klein', element: 'p', attributes: { 'class': 'roki_small' } },
-                {name: 'p Winzig', element: 'p', attributes: { 'class': 'roki_tiny' } },
+                {name: 'p Normal', element: 'p', attributes: { 'class': '' } },
+                {name: 'p Klein', element: 'p', attributes: { 'class': 'vgtf_small' } },
+                {name: 'p Winzig', element: 'p', attributes: { 'class': 'vgtf_tiny' } },
                 {name: 'H1', element: 'h1'},
                 {name: 'H2', element: 'h2'},
                 {name: 'H3', element: 'h3'},
